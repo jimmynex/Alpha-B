@@ -1,0 +1,16 @@
+{
+  "name": "Alpha-B",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.0.0-beta.14"
+  },
+  "version": "0.0.0",
+  "authors": [
+    "PIANINI - NEX"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "dependencies": {
+    "angularfire": "~0.9.2",
+    "ryanmullins-angular-hammer": "~2.1.10"
+  }
+}
