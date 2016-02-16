@@ -1,0 +1,25 @@
+<ion-pane>
+  	<ion-header-bar class="bar-stable">
+    	<h1 class="title">REPLAY</h1>
+    	<button ng-click="backMenu()"> BACK TO MENU </button>
+	</ion-header-bar>
+	<ion-content style="text-align: center" >
+		<div class="list">
+			<label class="item item-input">
+				<input type="text" ng-model="filter_eleve" placeholder="Filtrer ici par nom de l'élève">
+			</label>
+			<div ng-repeat="user in users | filter:filter_eleve" class=" list card">
+				<div class="replay_list item item-avatar">
+					<h2>Nom de l'élève : {{user.user}}</h2>
+				</div>
+
+				<div class="replay_list item item-body">
+					<button class="button button-small button-positive" ng-click="replay(expe)" ng-repeat="expe in user.experiment">
+						Exercice: {{expe.exercice}}<br/>
+						Scénario: {{expe.scenario}}<br/>
+					</button>
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-pane>
